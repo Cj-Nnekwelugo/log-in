@@ -13,13 +13,13 @@ const submitBtn = document.getElementById("sub-Button");
 submitBtn.style.color = "white";
 submitBtn.style.cursor = "pointer";
 
-const showPasswordBtn = document.getElementById("showPassword");
+const password = document.querySelector('input[type="password"]');
+const showPassword = document.getElementById("showPassword");
 
-showPasswordBtn.addEventListener("change", function() {
-     if (showPasswordBtn.checked) {
-         showPasswordBtn.type = "text";
-         } else { 
-            showPasswordBtn.type = "password";
-
-          } });
-
+showPassword.addEventListener("change", function () {
+    if (showPassword.querySelector("input").checked) {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+});

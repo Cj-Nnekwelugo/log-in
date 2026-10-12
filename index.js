@@ -13,6 +13,15 @@ const submitBtn = document.getElementById("sub-Button");
 submitBtn.style.color = "white";
 submitBtn.style.cursor = "pointer";
 
+const signIn = document.querySelector("form");
+
+signIn.addEventListener("submit", function(event){
+  event.preventDefault();
+  alert(`Signed in Sucessfully`)
+  this.reset();
+
+});
+
 const password = document.querySelector('input[type="password"]');
 const showPassword = document.getElementById("showPassword");
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anywhere App</title>
     <link rel="stylesheet" href="css/output.css" />
+    <script src="index.js" defer></script>
   </head>
   <body class="min-h-screen bg-slate-900 text-slate-50 antialiased">
     <div
@@ -26,7 +27,7 @@
               </div>
             </div>
 
-            <nav class="hidden items-center gap-8 text-sm font-medium text-slate-200 sm:flex">
+            <nav id="navBar" class="hidden items-center gap-8 text-sm font-medium text-slate-200 sm:flex">
               <a href="#" class="transition hover:text-amber-200">Home</a>
               <a href="#" class="transition hover:text-amber-200">Destinations</a>
               <a href="#" class="transition hover:text-amber-200">Offers</a>
@@ -48,7 +49,7 @@
                 Start for free
               </span>
 
-              <h1 class="mt-6 text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 id="intro" class="mt-6 text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
                 Travel light.
                 <span class="block text-amber-200">Live better.</span>
               </h1>
@@ -74,7 +75,7 @@
               </div>
             </section>
 
-            <section class="lg:justify-self-end">
+            <section id="Sign-In" class="lg:justify-self-end">
               <div class="w-full max-w-md rounded-[28px] border border-white/10 bg-slate-900/55 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur-xl sm:p-8">
                 <div class="mb-8 flex items-center justify-between gap-4">
                   <div>
@@ -109,6 +110,8 @@
                       class="w-full rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3 text-base text-white placeholder:text-slate-400 focus:border-amber-300/70 focus:outline-none focus:ring-2 focus:ring-amber-300/30"
                     />
                   </div>
+                  <label id="showPassword" class=" flex items-center gap-3 text-sm text-slate-300 "> <input type="checkbox" class="h-4 w-4 rounded border-white/20 bg-slate-950/30 text-amber-300 focus:ring-amber-300" > Show password </label>
+
 
                   <label class="flex items-center gap-3 text-sm text-slate-300">
                     <input type="checkbox" class="h-4 w-4 rounded border-white/20 bg-slate-950/30 text-amber-300 focus:ring-amber-300" />
@@ -116,6 +119,7 @@
                   </label>
 
                   <button
+                  id="sub-Button"
                     type="submit"
                     class="w-full rounded-2xl bg-gradient-to-r from-amber-300 to-orange-400 px-4 py-3 text-base font-bold text-slate-950 shadow-lg shadow-amber-500/20 transition hover:brightness-105"
                   >

@@ -9,8 +9,17 @@ const theEmail = document.getElementById("email");
 //theEmail.value = "Jackson@gmail.com";
 //console.log(theEmail.value);
 
-
 const submitBtn = document.getElementById("sub-Button");
 submitBtn.style.color = "white";
-submitBtn.addEventListener("click", () => console.log(submitBtn));
+submitBtn.style.cursor = "pointer";
+
+const showPasswordBtn = document.getElementById("showPassword");
+
+showPasswordBtn.addEventListener("change", function() {
+     if (showPasswordBtn.checked) {
+         showPasswordBtn.type = "text";
+         } else { 
+            showPasswordBtn.type = "password";
+
+          } });
 
